@@ -55,7 +55,6 @@ class _TccViewState extends State<TccView> {
       body: IndexedStack(
         index: _currentIndex,
         children: const [
-        // TODO: Implementar as telas
           Center(child: Text('Resumo')),
           Center(child: Text('Objetivos')),
           Center(child: Text('Desenvolvimento')),
@@ -71,14 +70,14 @@ class _TccViewState extends State<TccView> {
         },
         destinations: [
           NavigationDestination(icon: Icon(Icons.subject_outlined), label: 'Resumo', selectedIcon: Icon(Icons.subject)),
-          NavigationDestination(icon: Icon(Icons.target_outlined), label: 'Objetivos', selectedIcon: Icon(Icons.settings)),
+          NavigationDestination(icon: Icon(Icons.list_outlined), label: 'Objetivos', selectedIcon: Icon(Icons.list)),
           NavigationDestination(icon: Icon(Icons.code_outlined), label: 'Desenvolvimento', selectedIcon: Icon(Icons.code)),
           NavigationDestination(icon: Icon(Icons.group_outlined), label: 'Equipe', selectedIcon: Icon(Icons.group)),
         ],
       ),
     );
   }
-}
+} 
 ```
 
 ## Ajustar o home_view.dart
